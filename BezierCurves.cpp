@@ -38,7 +38,7 @@ std::vector<std::vector<int>> facesOfSurfaceOfRotation;
 
 int curSelectedPoint;
 
-float paraStep = 0.1f;
+float paraStep = 0.01f;
 
 void toRGB(int r, int g, int b){
     glColor3f((float)r/255.0, (float)g/255.0, (float)b/255.0);
@@ -468,7 +468,7 @@ int main(int argc, char *argv[])
     glutMouseFunc(mouseCallback);  
 
     glutIdleFunc(idle);
-    glClearColor(1,1,1,1);
+    glClearColor(0.709f,0.917f,1,1);
 
     // control_Points.push_back(glm::vec2(0.5, 0.5));
     // point_Hovered.push_back(false);
